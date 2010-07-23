@@ -72,7 +72,7 @@ class TestOfXmlMason < Test::Unit::TestCase
     doc = Handsoap::XmlMason::Document.new do |doc|
       doc.add 'body' do |b|
         b.add 'yonks' do |y|
-          y.set_value '<b>bold</b>', :raw
+          y.set_value '<b>bold</b>', :raw => true
         end
       end
     end
